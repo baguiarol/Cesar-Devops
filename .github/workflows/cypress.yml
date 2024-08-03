@@ -1,15 +1,17 @@
-name: Cypress Tests Run on Pipeline
+name: Cypress Tests
 
-on: [push]
+on: push
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false # https://github.com/cypress-io/github-action/issues/48
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - uses: cypress-io/github-action@v6
-      - run: npm install
-      - run: npx cypress open
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
