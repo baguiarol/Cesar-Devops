@@ -1,28 +1,20 @@
 {
-  "name": "xpeducacao",
+  "name": "saucedemouitest",
   "version": "1.0.0",
-  "description": "Testes Automatizados de API",
+  "description": "Testes Automatizados de Interface Gráfica / UI",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/barbaracabral/serverRestAPI.git"
-  },
   "keywords": [
     "test",
+    "ui",
     "cypress",
     "xpeducacao"
   ],
-  "author": "Bárbara Cabral da Conceição",
+  "author": "Bárbara Cabral",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/barbaracabral/serverRestAPI/issues"
-  },
-  "homepage": "https://github.com/barbaracabral/serverRestAPI#readme",
   "dependencies": {
-    "cypress": "^10.11.0",
-    "unique-names-generator": "^4.7.1"
+    "cypress": "^10.11.0"
   }
 }

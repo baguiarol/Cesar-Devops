@@ -1,21 +1,23 @@
-# serverRestAPI
-ServerRestAPI Testing 
+# sauceDemoUITest
+sauce Demo UI Testing Repo
 
-# Depends on Server Rest Project
-To run this project check this documentation:
-https://serverest.dev/ from @PauloGoncalvesBH
+# Node: 
+https://nodejs.org/en/download/  
 
-# Install
+# Instalar
 ```
 npm install
 ```
 
-# Run Cypress open browser
+# Rodar com browser aberto
 ```
 npx cypress open
 ```
 
-# Run Cypress headless mode
+# Rodar com browser fechado
 ```
 npx cypress run
 ```
+
+# Aplicação de Base:
+https://www.saucedemo.com/ 
