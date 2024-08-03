@@ -5,7 +5,7 @@ let email, nome, userID;
 describe('Cadastro Simples de Usuário', () => {
   it('Cadastrar Usuário', () => {
     email = createNewEmail();
-    nome = createNewName();
+    // nome = createNewName();
 
     cy.request({
       method: 'POST',
